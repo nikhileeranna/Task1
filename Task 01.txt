@@ -1,0 +1,41 @@
+Do a write up for the followings:? 
+1. Difference between HTTP1.1 vs HTTP2 
+	HTTP2 is binary, instead of textual
+	HTTP2 is fully multiplexed, instead of ordered and blocking
+	HTTP2 can, therefore, use one connection for parallelism
+	HTP2 uses header compression to reduce overhead
+	HTTP2 allows servers to “push” responses proactively into client caches
+	HTTP2 is secured by default.
+	HTTP2 refresh rate is faster than HTTP1.1
+	
+
+2. http version history 
+HTTP (HyperText Transfer Protocol) is the underlying protocol of the World Wide Web. Developed by Tim Berners-Lee and his team between 1989-1991, HTTP has seen many changes, keeping most of the simplicity and further shaping its flexibility.
+	HTTP/0.9 – The one-line protocol - 1991
+	HTTP/1.0 – Building extensibility - 1991-1995 period
+	HTTP/1.1 – The standardized protocol - 1997
+	HTTP/2 – A protocol for greater performance - 2016
+
+3. List 5 difference between Browser JS(console) vs Nodejs 
+
+In browser “window” is a predefined global object which has functions and attributes, where as Nodejs doesn’t have it.
+In browser “location” is another predefined object, where as Nodejs doesn’t have it.
+In browser “require” is not predefined object, where as Nodejs has it.
+In browser module is not required, where as in Nodejs you have to keep your code inside the module.
+In browser “document” is a predefined object, where as Nodejs doesn’t have it.
+
+4. what happens when you type a URL in the address bar in the browser?
+
+	1.Browser checks cache for DNS entry to find the corresponding IP address of website.
+	  It looks for following cache. If not found in one, then continues checking to the next until found.
+		Browser Cache
+		Operating Systems Cache
+		Router Cache
+		ISP Cache
+	2.If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
+	  The requests are sent using small data packets that contain information content of request and IP address it is destined for.
+	3.Browser initiates a TCP (Transfer Control Protocol) connection with the server using synchronize(SYN) and acknowledge(ACK) messages.
+	4.Browser sends an HTTP request to the web server. GET or POST request.
+	5.Server on the host computer handles that request and sends back a response. It assembles a response in some format like JSON, XML and HTML.
+	6.Server sends out an HTTP response along with the status of response.
+	7.Browser displays HTML content
